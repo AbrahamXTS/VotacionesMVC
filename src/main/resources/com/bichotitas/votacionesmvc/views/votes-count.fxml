@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<VBox alignment="CENTER" spacing="30.0" style="-fx-background-color: #3498db;"
+      xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.bichotitas.votacionesmvc.views.VotesCountView">
+    <children>
+        <HBox fx:id="buttonsContainer" prefHeight="0.0" prefWidth="100.0" spacing="50.0" style="-fx-alignment: center;">
+        </HBox>
+
+        <VBox prefHeight="0.0" prefWidth="100.0" spacing="15.0" style="-fx-alignment: center;">
+            <children>
+                <Button onAction="#openBarChart" text="Ver resultados en gráfica de barras"/>
+                <Button onAction="#openPieChart" text="Ver resultados en gráfica de pastel"/>
+            </children>
+            <VBox.margin>
+                <Insets/>
+            </VBox.margin>
+        </VBox>
+    </children>
+
+    <padding>
+        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0"/>
+    </padding>
+</VBox>
