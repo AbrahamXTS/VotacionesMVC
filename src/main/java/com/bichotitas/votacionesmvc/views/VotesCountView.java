@@ -12,6 +12,9 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 
 import java.io.IOException;
@@ -54,6 +57,10 @@ public class VotesCountView implements Initializable {
             Button addVoteButton = getAddVoteButtonByProductName(productName);
             Text votesCountLabel = new Text("Votos: " + resultsRepository.getResultsByProductName(productName).size());
 
+            productNameLabel.setFill(Color.WHITE);
+            votesCountLabel.setFill(Color.WHITE);
+
+            container.setId("product");
             container.getChildren().addAll(productNameLabel, addVoteButton, votesCountLabel);
 
             productsContainer.getChildren().add(container);

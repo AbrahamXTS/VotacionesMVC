@@ -21,6 +21,8 @@ public class Main extends Application {
         scene.getStylesheets().add(Objects.requireNonNull(Main.class.getResource("views/styles.css")).toString());
 
         stage.setTitle("Sistema de votaciones MVC");
+        stage.setResizable(false);
+
         stage.setScene(scene);
         stage.show();
     }

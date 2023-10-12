@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="294fb788-0331-43ef-8658-138f59aa8098" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bichotitas/votacionesmvc/models/StageAndController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bichotitas/votacionesmvc/utils/JavaFXUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bichotitas/votacionesmvc/views/BarChartView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bichotitas/votacionesmvc/views/PieChartView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/bichotitas/votacionesmvc/views/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bichotitas/votacionesmvc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bichotitas/votacionesmvc/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bichotitas/votacionesmvc/controllers/VotesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bichotitas/votacionesmvc/controllers/VotesController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bichotitas/votacionesmvc/views/VotesCountView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bichotitas/votacionesmvc/views/VotesCountView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/bichotitas/votacionesmvc/views/bar-chart.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/bichotitas/votacionesmvc/views/bar-chart.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/bichotitas/votacionesmvc/views/pie-chart.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/bichotitas/votacionesmvc/views/pie-chart.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/bichotitas/votacionesmvc/views/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/bichotitas/votacionesmvc/views/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/bichotitas/votacionesmvc/views/votes-count.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/bichotitas/votacionesmvc/views/votes-count.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/results.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/results.txt" afterDir="false" />
     </list>
