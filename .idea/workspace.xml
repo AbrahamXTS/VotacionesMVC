@@ -5,32 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="294fb788-0331-43ef-8658-138f59aa8098" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bichotitas/votacionesmvc/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bichotitas/votacionesmvc/controllers/VotesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bichotitas/votacionesmvc/models/Vote.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bichotitas/votacionesmvc/repositories/FileProductsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bichotitas/votacionesmvc/repositories/FileResultsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bichotitas/votacionesmvc/repositories/ProductsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bichotitas/votacionesmvc/repositories/ResultsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bichotitas/votacionesmvc/utils/FileReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bichotitas/votacionesmvc/views/VotesCountView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/bichotitas/votacionesmvc/views/bar-chart.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/bichotitas/votacionesmvc/views/pie-chart.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/bichotitas/votacionesmvc/views/votes-count.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/products.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/results.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bichotitas/votacionesmvc/models/StageAndController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bichotitas/votacionesmvc/utils/JavaFXUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bichotitas/votacionesmvc/views/BarChartView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bichotitas/votacionesmvc/views/PieChartView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/bichotitas/votacionesmvc/views/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bichotitas/votacionesmvc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bichotitas/votacionesmvc/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bichotitas/votacionesmvc/controllers/VotesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bichotitas/votacionesmvc/controllers/VotesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bichotitas/votacionesmvc/views/VotesCountView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bichotitas/votacionesmvc/views/VotesCountView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/bichotitas/votacionesmvc/views/bar-chart.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/bichotitas/votacionesmvc/views/bar-chart.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/bichotitas/votacionesmvc/views/pie-chart.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/bichotitas/votacionesmvc/views/pie-chart.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/bichotitas/votacionesmvc/views/votes-count.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/bichotitas/votacionesmvc/views/votes-count.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/results.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/results.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,10 +27,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
-        <option value="Class" />
         <option value="Kotlin Class" />
         <option value="FxmlFile" />
+        <option value="CSS File" />
+        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -60,10 +48,13 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2WbITdJMcPfU5qFNkX1aZgOtTar" />
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
@@ -78,16 +69,18 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "spring.boot.initializr"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/com/bichotitas/votacionesmvc/views" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/resources/com/bichotitas/votacionesmvc" />
       <recent name="$PROJECT_DIR$/src/main/resources/views" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.bichotitas.votacionesmvc.models" />

@@ -1,0 +1,19 @@
+#rootVotes {
+    -fx-background-color: #70a1ff;
+    -fx-padding: 25;
+}
+
+#productsContainer {
+    -fx-alignment: center;
+    -fx-spacing: 50;
+}
+
+#product {
+    -fx-alignment: center;
+    -fx-spacing: 10;
+}
+
+#openChartsButtonContainer {
+    -fx-alignment: center;
+    -fx-spacing: 15;
+}

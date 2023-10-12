@@ -8,8 +8,8 @@ import java.util.Calendar;
 public class VotesController {
     private final ResultsRepository resultsRepository;
 
-    public VotesController(ResultsRepository resultsRepository) {
-        this.resultsRepository = resultsRepository;
+    public VotesController(ResultsRepository fileResultsRepository) {
+        this.resultsRepository = fileResultsRepository;
     }
 
     public void addVote(String productName) {
