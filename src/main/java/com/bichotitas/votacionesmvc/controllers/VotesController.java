@@ -2,8 +2,8 @@ package com.bichotitas.votacionesmvc.controllers;
 
 import com.bichotitas.votacionesmvc.models.Vote;
 import com.bichotitas.votacionesmvc.repositories.ResultsRepository;
-
-import java.util.Calendar;
+import com.bichotitas.votacionesmvc.utils.Logger;
+import com.bichotitas.votacionesmvc.utils.TimeUtils;
 
 public class VotesController {
     private final ResultsRepository resultsRepository;
@@ -13,16 +13,13 @@ public class VotesController {
     }
 
     public void addVote(String productName) {
-        Calendar calendar = Calendar.getInstance();
-
-        String date = calendar.get(Calendar.DAY_OF_MONTH) + "-" + calendar.get(Calendar.MONTH) + "-" + calendar.get(Calendar.YEAR);
-        String time = calendar.get(Calendar.HOUR_OF_DAY) + ":" + calendar.get(Calendar.MINUTE) + ":" + calendar.get(Calendar.SECOND);
-
+        Logger.log(this.getClass().getSimpleName(), "Vote saved");
+        
         this.resultsRepository.save(
                 Vote.builder()
                         .productName(productName)
-                        .date(date)
-                        .time(time)
+                        .date(TimeUtils.getDate())
+                        .time(TimeUtils.getTime())
                         .build()
         );
     }

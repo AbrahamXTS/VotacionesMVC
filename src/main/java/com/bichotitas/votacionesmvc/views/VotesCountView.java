@@ -7,14 +7,13 @@ import com.bichotitas.votacionesmvc.repositories.FileResultsRepository;
 import com.bichotitas.votacionesmvc.repositories.ProductsRepository;
 import com.bichotitas.votacionesmvc.repositories.ResultsRepository;
 import com.bichotitas.votacionesmvc.utils.JavaFXUtils;
+import com.bichotitas.votacionesmvc.utils.Logger;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
-import javafx.scene.text.Font;
-import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 
 import java.io.IOException;
@@ -23,15 +22,16 @@ import java.util.Objects;
 import java.util.ResourceBundle;
 
 public class VotesCountView implements Initializable {
-    private final ProductsRepository productsRepository;
-    private final ResultsRepository resultsRepository;
-    private final VotesController votesController;
     @FXML
     public HBox productsContainer;
     @FXML
     public Button barChartButton;
     @FXML
     public Button pieChartButton;
+
+    private final ProductsRepository productsRepository;
+    private final ResultsRepository resultsRepository;
+    private final VotesController votesController;
     private BarChartView barChartViewController;
     private PieChartView pieChartViewController;
 
@@ -44,10 +44,13 @@ public class VotesCountView implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resourceBundle) {
+        Logger.log(this.getClass().getSimpleName(), "Initializing the votes count view");
         updateVotesCountUI();
     }
 
     public void updateVotesCountUI() {
+        Logger.log(this.getClass().getSimpleName(), "Updating the votes count view");
+
         productsContainer.getChildren().clear();
 
         productsRepository.getAllProducts().forEach(productName -> {
@@ -88,6 +91,8 @@ public class VotesCountView implements Initializable {
     }
 
     public void openBarChart() throws IOException {
+        Logger.log(this.getClass().getSimpleName(), "Opening the bar chart window");
+
         StageAndController stageAndController = JavaFXUtils.openNewWindow("views/bar-chart.fxml", "Gráfica de barras");
         barChartViewController = stageAndController.getController();
 
@@ -96,6 +101,8 @@ public class VotesCountView implements Initializable {
     }
 
     public void openPieChart() throws IOException {
+        Logger.log(this.getClass().getSimpleName(), "Opening the pie chart window");
+        
         StageAndController stageAndController = JavaFXUtils.openNewWindow("views/pie-chart.fxml", "Gráfica de pastel");
         pieChartViewController = stageAndController.getController();
 

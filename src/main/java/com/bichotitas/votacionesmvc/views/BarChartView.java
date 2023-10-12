@@ -4,6 +4,7 @@ import com.bichotitas.votacionesmvc.repositories.FileProductsRepository;
 import com.bichotitas.votacionesmvc.repositories.FileResultsRepository;
 import com.bichotitas.votacionesmvc.repositories.ProductsRepository;
 import com.bichotitas.votacionesmvc.repositories.ResultsRepository;
+import com.bichotitas.votacionesmvc.utils.Logger;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.chart.BarChart;
@@ -16,12 +17,12 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class BarChartView implements Initializable {
-    private final ProductsRepository productsRepository;
-    private final ResultsRepository resultsRepository;
-
     @FXML
     public HBox barChartContainer;
 
+    private final ProductsRepository productsRepository;
+    private final ResultsRepository resultsRepository;
+    
     public BarChartView() {
         productsRepository = new FileProductsRepository("src/main/resources/products.txt");
         resultsRepository = new FileResultsRepository("src/main/resources/results.txt");
@@ -29,10 +30,13 @@ public class BarChartView implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resourceBundle) {
+        Logger.log(this.getClass().getSimpleName(), "Initializing the bar chart view");
         updateUI();
     }
 
     public void updateUI() {
+        Logger.log(this.getClass().getSimpleName(), "Updating the bar chart view");
+
         barChartContainer.getChildren().clear();
 
         CategoryAxis xAxis = new CategoryAxis();

@@ -2,6 +2,7 @@ package com.bichotitas.votacionesmvc.repositories;
 
 import com.bichotitas.votacionesmvc.models.Vote;
 import com.bichotitas.votacionesmvc.utils.FileReader;
+import com.bichotitas.votacionesmvc.utils.Logger;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -17,8 +18,7 @@ public class FileResultsRepository implements ResultsRepository {
         this.resultsFilePath = resultsFilePath;
     }
 
-    @Override
-    public HashMap<String, List<Vote>> getAllResults() {
+    private HashMap<String, List<Vote>> getAllResults() {
         FileReader fileReader = new FileReader(resultsFilePath);
         List<String> fileContent = fileReader.getFileContent();
 
@@ -48,16 +48,20 @@ public class FileResultsRepository implements ResultsRepository {
 
     @Override
     public List<Vote> getResultsByProductName(String productName) {
+        Logger.log(this.getClass().getSimpleName(), "Getting votes for " + productName);
+
         return getAllResults()
                 .getOrDefault(productName, new ArrayList<>());
     }
 
     @Override
     public Vote save(Vote vote) {
+        Logger.log(this.getClass().getSimpleName(), "Saving vote for " + vote.getProductName());
+
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(resultsFilePath, true))) {
             writer.write(vote.toString() + "\n");
         } catch (IOException error) {
-            System.out.println("Oh no! An error occurred while writing to the file " + error.getMessage());
+            Logger.log(this.getClass().getSimpleName(), "Error registered while saving the vote" + error.getMessage());
         }
 
         return vote;

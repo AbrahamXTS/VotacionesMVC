@@ -1,0 +1,21 @@
+Main - Initializing the main view - 11-9-2023 - 23:24:53
+VotesCountView - Initializing the votes count view - 11-9-2023 - 23:24:53
+VotesCountView - Updating the votes count view - 11-9-2023 - 23:24:53
+FileProductsRepository - Getting all products - 11-9-2023 - 23:24:53
+FileResultsRepository - Getting votes for Sandia - 11-9-2023 - 23:24:53
+FileResultsRepository - Getting votes for Manzana - 11-9-2023 - 23:24:53
+FileResultsRepository - Getting votes for Pera - 11-9-2023 - 23:24:53
+VotesController - Vote saved - 11-9-2023 - 23:24:53
+FileResultsRepository - Saving vote for Sandia - 11-9-2023 - 23:24:53
+VotesCountView - Updating the votes count view - 11-9-2023 - 23:24:53
+FileProductsRepository - Getting all products - 11-9-2023 - 23:24:53
+FileResultsRepository - Getting votes for Sandia - 11-9-2023 - 23:24:53
+FileResultsRepository - Getting votes for Manzana - 11-9-2023 - 23:24:53
+FileResultsRepository - Getting votes for Pera - 11-9-2023 - 23:24:53
+VotesCountView - Opening the bar chart window - 11-9-2023 - 23:24:53
+BarChartView - Initializing the bar chart view - 11-9-2023 - 23:24:53
+BarChartView - Updating the bar chart view - 11-9-2023 - 23:24:53
+FileProductsRepository - Getting all products - 11-9-2023 - 23:24:53
+FileResultsRepository - Getting votes for Sandia - 11-9-2023 - 23:24:53
+FileResultsRepository - Getting votes for Manzana - 11-9-2023 - 23:24:53
+FileResultsRepository - Getting votes for Pera - 11-9-2023 - 23:24:53

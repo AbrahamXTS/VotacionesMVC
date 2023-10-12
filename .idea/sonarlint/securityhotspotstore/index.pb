@@ -19,3 +19,13 @@ t
 Dsrc/main/java/com/bichotitas/votacionesmvc/views/VotesCountView.java,7/c/7c8e85ed8b270def68b0738ff51c4599688bd7a7
 d
 4src/main/java/com/bichotitas/votacionesmvc/Main.java,6/d/6d1e8da1ee5726f5eb52af5859b0da61e6afd2b3
+q
+Asrc/main/java/com/bichotitas/votacionesmvc/utils/JavaFXUtils.java,b/a/ba2b13e94c8af95652f213f1e2d06a74f0ca6adb
+7
+pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
+y
+Isrc/main/java/com/bichotitas/votacionesmvc/models/StageAndController.java,2/4/2484c1fb2231f375f717561b019adc67212af9f6
+r
+Bsrc/main/java/com/bichotitas/votacionesmvc/views/BarChartView.java,2/b/2b2c566dd902e5628cec0f7e147289469dab3d27
+r
+Bsrc/main/java/com/bichotitas/votacionesmvc/views/PieChartView.java,c/c/ccce4e88ff1eeb893cf98bd0a65a65c002e3d0f5

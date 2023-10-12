@@ -4,6 +4,7 @@ import com.bichotitas.votacionesmvc.repositories.FileProductsRepository;
 import com.bichotitas.votacionesmvc.repositories.FileResultsRepository;
 import com.bichotitas.votacionesmvc.repositories.ProductsRepository;
 import com.bichotitas.votacionesmvc.repositories.ResultsRepository;
+import com.bichotitas.votacionesmvc.utils.Logger;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -15,11 +16,11 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class PieChartView implements Initializable {
-    private final ProductsRepository productsRepository;
-    private final ResultsRepository resultsRepository;
-
     @FXML
     public HBox pieChartContainer;
+
+    private final ProductsRepository productsRepository;
+    private final ResultsRepository resultsRepository;
 
     public PieChartView() {
         productsRepository = new FileProductsRepository("src/main/resources/products.txt");
@@ -28,10 +29,13 @@ public class PieChartView implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resourceBundle) {
+        Logger.log(this.getClass().getSimpleName(), "Initializing the bar chart view");
         updateUI();
     }
 
     public void updateUI() {
+        Logger.log(this.getClass().getSimpleName(), "Updating the pie chart view");
+
         pieChartContainer.getChildren().clear();
 
         ObservableList<PieChart.Data> data = FXCollections.observableArrayList();
